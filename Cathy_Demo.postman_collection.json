@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "8b96de81-a424-4f88-9358-010ef24606f7",
+		"name": "Cathy_Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cathy reuqest API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"req\":{\"Keys\":[\"10480016\"],\"From\":\"2023/03/10\",\"To\":\"2024/03/10\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.cathaybk.com.tw/cathaybk/service/newwealth/fund/chartservice.asmx/GetFundNavChart",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cathaybk",
+						"com",
+						"tw"
+					],
+					"path": [
+						"cathaybk",
+						"service",
+						"newwealth",
+						"fund",
+						"chartservice.asmx",
+						"GetFundNavChart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get priceByDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prices/2024-03-06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices",
+						"2024-03-06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddPirceByDate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "250",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/prices/2024-03-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices",
+						"2024-03-10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePriceByDate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "200.00",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/prices/2024-03-06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices",
+						"2024-03-06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePriceByDate",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prices/2024-03-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices",
+						"2024-03-10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getChangeBetweenTwoDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prices/change?startDate=2024-03-06&endDate=2024-03-07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices",
+						"change"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-03-06"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-03-07"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
